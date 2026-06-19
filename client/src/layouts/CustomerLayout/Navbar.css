@@ -24,6 +24,18 @@
   align-items: center;
 }
 
+.navbar-brand img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
+  padding-right: 10px;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
 .brand-glowing {
   background: linear-gradient(135deg, hsl(var(--accent)) 0%, #fff 100%);
   -webkit-background-clip: text;

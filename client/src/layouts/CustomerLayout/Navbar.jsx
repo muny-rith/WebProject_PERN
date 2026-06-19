@@ -20,8 +20,8 @@ const Navbar = () => {
       <div className="navbar-container container">
         {/* Brand Logo */}
         <Link to="/" className="navbar-brand">
-          <span className="brand-glowing">AURA</span>
-          <span className="brand-dot">.</span>
+          <img src="/logo.png" alt="logo" />
+          <span className="brand-glowing">&nbsp;Moon Bicycle</span>
         </Link>
 
         {/* Mobile Menu Toggle */}
