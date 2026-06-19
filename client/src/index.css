@@ -3,31 +3,31 @@
    ========================================================================== */
 
 :root {
-  /* HSL Color Tokens - Sophisticated Slate & Champagne Gold */
-  --bg-dark: 222 47% 11%;       /* Deepest Slate Blue #0b132b */
-  --bg-card: 223 47% 15%;       /* Card Slate #0f1c3f */
-  --bg-input: 223 47% 18%;      /* Text Input Slate #14244d */
-  --color-primary: 224 71% 4%;  /* Rich black */
+  /* HSL Color Tokens - Prussian Blue & Sunset Orange (Coolors Palette) */
+  --bg-dark: 201 95% 10%;       /* Deep Prussian Blue #011d2c */
+  --bg-card: 201 95% 14%;       /* Card Blue #022a40 */
+  --bg-input: 201 95% 18%;      /* Input Blue #033753 */
+  --color-primary: 201 95% 7%;  /* Deepest Dark */
   
-  --primary: 220 14% 96%;       /* Crisp White/Silver */
-  --primary-rgb: 245, 245, 247;
-  --secondary: 215 20% 65%;     /* Muted Steel Gray */
-  --accent: 38 92% 50%;         /* Premium Metallic Gold #f5a623 */
-  --accent-rgb: 245, 166, 35;
-  --accent-hover: 38 92% 43%;   /* Darker Gold #db8c12 */
+  --primary: 199 66% 90%;       /* Light Sky Blue / Silver Tint */
+  --primary-rgb: 230, 243, 250;
+  --secondary: 199 40% 70%;     /* Muted Soft Blue */
+  --accent: 32 100% 49%;        /* Electric Orange #FB8500 */
+  --accent-rgb: 251, 133, 0;
+  --accent-hover: 43 100% 51%;  /* Golden Yellow #FFB703 */
   
   --success: 142 76% 36%;       /* Emerald Green */
-  --warning: 38 92% 50%;        /* Gold */
+  --warning: 43 100% 51%;       /* Golden Yellow */
   --danger: 350 89% 60%;        /* Coral Red */
-  --info: 200 95% 48%;          /* Sky Blue */
+  --info: 192 70% 43%;          /* Teal Blue */
 
-  --text-main: 210 40% 98%;     /* Light Silver text */
-  --text-muted: 215 16% 70%;    /* Muted text */
-  --text-dark: 222 47% 11%;     /* Dark slate text (for light buttons) */
+  --text-main: 199 66% 96%;     /* Soft blue-white text */
+  --text-muted: 199 30% 75%;    /* Muted soft text */
+  --text-dark: 201 95% 10%;     /* Dark prussian text (for light elements) */
 
   /* Borders & Blurs */
-  --border-light: rgba(255, 255, 255, 0.08);
-  --border-glass: rgba(255, 255, 255, 0.05);
+  --border-light: rgba(142, 202, 230, 0.08); /* Using #8ECAE6 tint */
+  --border-glass: rgba(142, 202, 230, 0.05);
   --glass-blur: blur(16px);
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -35,10 +35,10 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 12px 24px rgba(0, 0, 0, 0.25);
-  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.35);
-  --shadow-glow: 0 0 20px rgba(245, 166, 35, 0.2);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 12px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(251, 133, 0, 0.25); /* Orange glow */
 
   /* Fonts */
   --font-header: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -70,9 +70,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(at 0% 0%, hsla(260, 45%, 15%, 0.3) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(38, 45%, 12%, 0.2) 0px, transparent 50%),
-    radial-gradient(at 50% 100%, hsla(220, 50%, 10%, 0.4) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, hsla(201, 95%, 15%, 0.4) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(32, 100%, 49%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(192, 70%, 20%, 0.3) 0px, transparent 50%);
   background-attachment: fixed;
   min-height: 100vh;
 }
