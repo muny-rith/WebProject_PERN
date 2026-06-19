@@ -3,15 +3,15 @@
    ========================================================================== */
 
 :root {
-  /* HSL Color Tokens - Prussian Blue & Sunset Orange (Coolors Palette) */
-  --bg-dark: 201 95% 10%;       /* Deep Prussian Blue #011d2c */
-  --bg-card: 201 95% 14%;       /* Card Blue #022a40 */
-  --bg-input: 201 95% 18%;      /* Input Blue #033753 */
-  --color-primary: 201 95% 7%;  /* Deepest Dark */
+  /* HSL Color Tokens - Prussian Blue & Sunset Orange (Light Theme) */
+  --bg-dark: 199 40% 97%;       /* Crisp Light Sky Blue Tint #F4F9FB */
+  --bg-card: 0 0% 100%;         /* Pure White #FFFFFF */
+  --bg-input: 199 30% 94%;      /* Soft Light Input #EBF2F5 */
+  --color-primary: 201 95% 15%; /* Deep Prussian Blue */
   
-  --primary: 199 66% 90%;       /* Light Sky Blue / Silver Tint */
-  --primary-rgb: 230, 243, 250;
-  --secondary: 199 40% 70%;     /* Muted Soft Blue */
+  --primary: 201 95% 15%;       /* Prussian Blue */
+  --primary-rgb: 2, 48, 71;
+  --secondary: 201 30% 45%;     /* Muted Prussian Blue */
   --accent: 32 100% 49%;        /* Electric Orange #FB8500 */
   --accent-rgb: 251, 133, 0;
   --accent-hover: 43 100% 51%;  /* Golden Yellow #FFB703 */
@@ -21,13 +21,13 @@
   --danger: 350 89% 60%;        /* Coral Red */
   --info: 192 70% 43%;          /* Teal Blue */
 
-  --text-main: 199 66% 96%;     /* Soft blue-white text */
-  --text-muted: 199 30% 75%;    /* Muted soft text */
-  --text-dark: 201 95% 10%;     /* Dark prussian text (for light elements) */
+  --text-main: 201 95% 12%;     /* Dark Prussian Blue Text #022435 */
+  --text-muted: 201 25% 40%;    /* Muted Slate Text #294352 */
+  --text-dark: 0 0% 100%;       /* Pure White Text (for orange buttons) */
 
   /* Borders & Blurs */
-  --border-light: rgba(142, 202, 230, 0.08); /* Using #8ECAE6 tint */
-  --border-glass: rgba(142, 202, 230, 0.05);
+  --border-light: rgba(33, 158, 188, 0.15); /* Soft Teal Border */
+  --border-glass: rgba(33, 158, 188, 0.08);
   --glass-blur: blur(16px);
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -35,10 +35,10 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 12px 24px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 20px rgba(251, 133, 0, 0.25); /* Orange glow */
+  --shadow-sm: 0 4px 12px rgba(2, 48, 71, 0.08);
+  --shadow-md: 0 12px 24px rgba(2, 48, 71, 0.12);
+  --shadow-lg: 0 24px 48px rgba(2, 48, 71, 0.16);
+  --shadow-glow: 0 0 20px rgba(251, 133, 0, 0.15); /* Subtle Orange Glow */
 
   /* Fonts */
   --font-header: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  color: #fff;
+  color: hsl(var(--text-main));
 }
 
 a {
@@ -111,26 +111,26 @@ a {
 
 .btn-primary {
   background: linear-gradient(135deg, hsl(var(--accent)) 0%, #d48200 100%);
-  color: hsl(var(--bg-dark));
+  color: hsl(var(--text-dark));
   box-shadow: var(--shadow-glow);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(245, 166, 35, 0.35);
-  background: linear-gradient(135deg, #ffbc42 0%, hsl(var(--accent)) 100%);
+  box-shadow: 0 0 30px rgba(251, 133, 0, 0.35);
+  background: linear-gradient(135deg, #ff9f43 0%, hsl(var(--accent)) 100%);
 }
 
 .btn-secondary {
-  background: hsla(255, 255%, 255%, 0.05);
+  background: rgba(33, 158, 188, 0.08);
   border: 1px solid var(--border-light);
   color: hsl(var(--text-main));
   backdrop-filter: var(--glass-blur);
 }
 
 .btn-secondary:hover {
-  background: hsla(255, 255%, 255%, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(33, 158, 188, 0.15);
+  border-color: rgba(33, 158, 188, 0.3);
   transform: translateY(-2px);
 }
 
@@ -190,8 +190,8 @@ a {
   width: 100%;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  background-color: hsla(var(--bg-input), 0.6);
-  color: #fff;
+  background-color: hsl(var(--bg-card));
+  color: hsl(var(--text-main));
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
   padding: 14px 18px;
@@ -201,8 +201,8 @@ a {
 
 .input-control:focus {
   border-color: hsl(var(--accent));
-  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.15);
-  background-color: hsla(var(--bg-input), 0.9);
+  box-shadow: 0 0 0 3px rgba(251, 133, 0, 0.15);
+  background-color: hsl(var(--bg-card));
 }
 
 /* Layout Utilities */
