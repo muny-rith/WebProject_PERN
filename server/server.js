@@ -26,6 +26,11 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'healthy', timestamp: new Date() });
 });
 
+// Root route to satisfy Render's default health check
+app.get('/', (req, res) => {
+  res.status(200).send('E-Commerce API Server is running');
+});
+
 // Mounting feature routes
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
