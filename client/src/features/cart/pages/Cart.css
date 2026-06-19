@@ -1,0 +1,147 @@
+.cart-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.empty-cart-view {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 48px !important;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.empty-cart-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: rgba(245, 166, 35, 0.08);
+  border: 1px solid rgba(245, 166, 35, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--accent));
+  margin-bottom: 8px;
+}
+
+.empty-cart-view h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.empty-cart-view p {
+  color: hsl(var(--text-muted));
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 440px;
+  margin-bottom: 12px;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+  align-items: start;
+}
+
+.cart-list-header {
+  display: grid;
+  grid-template-columns: 80px 2fr 1.5fr 1fr;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: hsl(var(--text-muted));
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Hide header labels on smaller displays */
+@media (max-width: 768px) {
+  .cart-list-header {
+    display: none;
+  }
+}
+
+.cart-items-wrapper {
+  margin-bottom: 24px;
+}
+
+.clear-cart-btn {
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
+/* Sidebar calculations summary panel */
+.cart-summary-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cart-summary-block h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 12px;
+}
+
+.summary-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: hsl(var(--text-muted));
+}
+
+.summary-row.grand-total-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 16px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-header);
+}
+
+.promo-tag-success {
+  color: #36d399;
+  background: rgba(54, 211, 153, 0.08);
+  border: 1px solid rgba(54, 211, 153, 0.15);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.checkout-trigger-btn {
+  width: 100%;
+  padding: 14px;
+}
+
+.continue-shopping-link {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: hsl(var(--text-muted));
+}
+
+.continue-shopping-link:hover {
+  color: hsl(var(--accent));
+}
+
+@media (max-width: 1024px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}
