@@ -2,51 +2,51 @@
    AURA PREMIUM E-COMMERCE DESIGN SYSTEM & GLOBAL CSS
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+
 :root {
-  /* HSL Color Tokens - Prussian Blue & Sunset Orange (Light Theme) */
-  --bg-dark: 199 40% 97%;       /* Crisp Light Sky Blue Tint #F4F9FB */
+  /* HSL Color Tokens - User Palette (Light Theme) */
+  --bg-main: 204 33% 97%;       /* Soft Light Background #F8FAFC */
   --bg-card: 0 0% 100%;         /* Pure White #FFFFFF */
-  --bg-input: 199 30% 94%;      /* Soft Light Input #EBF2F5 */
-  --color-primary: 201 95% 15%; /* Deep Prussian Blue */
+  --bg-input: 199 30% 94%;      /* Soft Light Input */
   
-  --primary: 201 95% 15%;       /* Prussian Blue */
-  --primary-rgb: 2, 48, 71;
-  --secondary: 201 30% 45%;     /* Muted Prussian Blue */
-  --accent: 32 100% 49%;        /* Electric Orange #FB8500 */
-  --accent-rgb: 251, 133, 0;
-  --accent-hover: 43 100% 51%;  /* Golden Yellow #FFB703 */
+  --primary: 200 94% 14%;       /* Dark Blue #023047 */
+  --secondary: 192 70% 43%;     /* Teal/Cyan #219EBC */
+  --info: 199 63% 73%;          /* Light Blue #8ECAE6 */
+  
+  --accent: 32 100% 49%;        /* Orange #FB8500 */
+  --accent-hover: 43 100% 51%;  /* Yellow/Gold #FFB703 */
   
   --success: 142 76% 36%;       /* Emerald Green */
   --warning: 43 100% 51%;       /* Golden Yellow */
   --danger: 350 89% 60%;        /* Coral Red */
-  --info: 192 70% 43%;          /* Teal Blue */
 
-  --text-main: 201 95% 12%;     /* Dark Prussian Blue Text #022435 */
-  --text-muted: 201 25% 40%;    /* Muted Slate Text #294352 */
-  --text-dark: 0 0% 100%;       /* Pure White Text (for orange buttons) */
+  --text-main: 200 94% 14%;     /* Dark Blue #023047 */
+  --text-muted: 200 30% 45%;    /* Muted Dark Blue */
+  --text-inverse: 0 0% 100%;    /* White Text (for primary buttons) */
 
   /* Borders & Blurs */
-  --border-light: rgba(33, 158, 188, 0.15); /* Soft Teal Border */
-  --border-glass: rgba(33, 158, 188, 0.08);
+  --border-light: rgba(2, 48, 71, 0.1); 
+  --border-glass: rgba(2, 48, 71, 0.05);
   --glass-blur: blur(16px);
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 24px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 4px 12px rgba(2, 48, 71, 0.08);
-  --shadow-md: 0 12px 24px rgba(2, 48, 71, 0.12);
-  --shadow-lg: 0 24px 48px rgba(2, 48, 71, 0.16);
-  --shadow-glow: 0 0 20px rgba(251, 133, 0, 0.15); /* Subtle Orange Glow */
+  /* Premium Soft Shadows */
+  --shadow-sm: 0 4px 12px rgba(2, 48, 71, 0.04);
+  --shadow-md: 0 10px 24px rgba(2, 48, 71, 0.06);
+  --shadow-lg: 0 24px 48px rgba(2, 48, 71, 0.08);
+  --shadow-glow: 0 0 20px rgba(251, 133, 0, 0.2); 
 
-  /* Fonts */
-  --font-header: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Fonts - Premium English first, Khmer fallback */
+  --font-header: 'Outfit', 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', 'Kantumruy Pro', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -63,17 +63,12 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: hsl(var(--bg-dark));
+  background-color: hsl(var(--bg-main));
   color: hsl(var(--text-main));
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  background-image: 
-    radial-gradient(at 0% 0%, hsla(201, 95%, 15%, 0.4) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(32, 100%, 49%, 0.08) 0px, transparent 50%),
-    radial-gradient(at 50% 100%, hsla(192, 70%, 20%, 0.3) 0px, transparent 50%);
-  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -110,27 +105,25 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, hsl(var(--accent)) 0%, #d48200 100%);
-  color: hsl(var(--text-dark));
-  box-shadow: var(--shadow-glow);
+  background: hsl(var(--primary));
+  color: hsl(var(--text-inverse));
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(251, 133, 0, 0.35);
-  background: linear-gradient(135deg, #ff9f43 0%, hsl(var(--accent)) 100%);
+  box-shadow: var(--shadow-md);
+  background: hsl(var(--secondary));
 }
 
 .btn-secondary {
-  background: rgba(33, 158, 188, 0.08);
+  background: hsl(var(--bg-card));
   border: 1px solid var(--border-light);
   color: hsl(var(--text-main));
-  backdrop-filter: var(--glass-blur);
 }
 
 .btn-secondary:hover {
-  background: rgba(33, 158, 188, 0.15);
-  border-color: rgba(33, 158, 188, 0.3);
+  border-color: hsl(var(--primary));
   transform: translateY(-2px);
 }
 
@@ -142,7 +135,7 @@ a {
 }
 
 .btn-text:hover {
-  color: hsl(var(--accent));
+  color: hsl(var(--primary));
 }
 
 .btn:disabled {
@@ -152,22 +145,20 @@ a {
   box-shadow: none !important;
 }
 
-/* Glowing Cards Framework */
+/* Minimalist Clean Cards */
 .glass-card {
-  background: hsla(var(--bg-card), 0.7);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  background: hsl(var(--bg-card));
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   padding: 24px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
   transition: var(--transition-normal);
 }
 
 .glass-card:hover {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--border-light);
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
 }
 
 /* Beautiful Inputs & Forms */
@@ -183,16 +174,15 @@ a {
   font-weight: 500;
   font-size: 0.9rem;
   color: hsl(var(--text-muted));
-  letter-spacing: 0.02em;
 }
 
 .input-control {
   width: 100%;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  background-color: hsl(var(--bg-card));
+  background-color: hsl(var(--bg-input));
   color: hsl(var(--text-main));
-  border: 1px solid var(--border-light);
+  border: 1px solid transparent;
   border-radius: var(--radius-md);
   padding: 14px 18px;
   outline: none;
@@ -200,9 +190,9 @@ a {
 }
 
 .input-control:focus {
-  border-color: hsl(var(--accent));
-  box-shadow: 0 0 0 3px rgba(251, 133, 0, 0.15);
   background-color: hsl(var(--bg-card));
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px rgba(2, 48, 71, 0.1);
 }
 
 /* Layout Utilities */
@@ -249,19 +239,18 @@ a {
 }
 
 .toast {
-  background: rgba(15, 28, 63, 0.95);
-  backdrop-filter: var(--glass-blur);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: hsl(var(--bg-card));
+  border: 1px solid var(--border-light);
   padding: 16px 24px;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  color: #fff;
+  box-shadow: var(--shadow-md);
+  color: hsl(var(--text-main));
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 12px;
   animation: toast-slide var(--transition-normal);
-  border-left: 4px solid hsl(var(--accent));
+  border-left: 4px solid hsl(var(--primary));
 }
 
 .toast.success { border-left-color: hsl(var(--success)); }
@@ -285,16 +274,16 @@ a {
   letter-spacing: 0.05em;
 }
 
-.badge-paid { background: rgba(54, 211, 153, 0.15); color: #36d399; border: 1px solid rgba(54, 211, 153, 0.25); }
-.badge-pending { background: rgba(251, 189, 35, 0.15); color: #fbbd23; border: 1px solid rgba(251, 189, 35, 0.25); }
-.badge-processing { background: rgba(58, 191, 248, 0.15); color: #3abff8; border: 1px solid rgba(58, 191, 248, 0.25); }
-.badge-shipped { background: rgba(129, 140, 248, 0.15); color: #818cf8; border: 1px solid rgba(129, 140, 248, 0.25); }
-.badge-delivered { background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3); }
-.badge-cancelled { background: rgba(248, 113, 113, 0.15); color: #f87171; border: 1px solid rgba(248, 113, 113, 0.25); }
+.badge-paid { background: hsla(142, 76%, 36%, 0.1); color: hsl(var(--success)); border: 1px solid hsla(142, 76%, 36%, 0.2); }
+.badge-pending { background: hsla(43, 100%, 51%, 0.1); color: hsl(var(--warning)); border: 1px solid hsla(43, 100%, 51%, 0.2); }
+.badge-processing { background: hsla(192, 70%, 43%, 0.1); color: hsl(var(--secondary)); border: 1px solid hsla(192, 70%, 43%, 0.2); }
+.badge-shipped { background: hsla(199, 63%, 73%, 0.1); color: hsl(var(--primary)); border: 1px solid hsla(199, 63%, 73%, 0.2); }
+.badge-delivered { background: hsla(142, 76%, 36%, 0.1); color: hsl(var(--success)); border: 1px solid hsla(142, 76%, 36%, 0.2); }
+.badge-cancelled { background: hsla(350, 89%, 60%, 0.1); color: hsl(var(--danger)); border: 1px solid hsla(350, 89%, 60%, 0.2); }
 
 /* Custom Animations */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 

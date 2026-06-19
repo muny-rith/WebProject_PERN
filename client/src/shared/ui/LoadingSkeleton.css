@@ -1,6 +1,6 @@
 .skeleton-card {
-  background: rgba(15, 28, 63, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: hsl(var(--info) / 0.1);
+  border: 1px solid hsl(var(--info) / 0.3);
   border-radius: var(--radius-lg);
   overflow: hidden;
   display: flex;
@@ -11,7 +11,7 @@
 .skeleton-image {
   width: 100%;
   height: 240px;
-  background: rgba(255, 255, 255, 0.04);
+  background: hsl(var(--info) / 0.15);
 }
 
 .skeleton-body {
@@ -23,7 +23,7 @@
 }
 
 .skeleton-line {
-  background: rgba(255, 255, 255, 0.04);
+  background: hsl(var(--info) / 0.2);
   border-radius: var(--radius-sm);
   height: 16px;
 }
@@ -73,8 +73,8 @@
   background-image: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.03) 20%,
-    rgba(255, 255, 255, 0.06) 60%,
+    rgba(255, 255, 255, 0.4) 20%,
+    rgba(255, 255, 255, 0.8) 60%,
     rgba(255, 255, 255, 0) 100%
   );
   animation: shimmer-swipe 2s infinite;

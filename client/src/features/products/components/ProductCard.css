@@ -12,7 +12,7 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  background: rgba(11, 19, 43, 0.8);
+  background: hsl(var(--bg-card));
   backdrop-filter: var(--glass-blur);
   border: 1px solid var(--border-light);
   padding: 4px 12px;
@@ -32,7 +32,7 @@
   border-radius: var(--radius-md);
   overflow: hidden;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: hsl(var(--bg-input));
 }
 
 .card-image-wrapper img {
@@ -49,7 +49,7 @@
 .out-of-stock-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(11, 19, 43, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(4px);
   color: hsl(var(--danger));
   font-family: var(--font-header);
@@ -74,7 +74,7 @@
   font-family: var(--font-header);
   font-size: 1.15rem;
   font-weight: 600;
-  color: #fff;
+  color: hsl(var(--text-main));
   line-height: 1.3;
   /* Double line clamp */
   display: -webkit-box;
@@ -107,7 +107,7 @@
   font-family: var(--font-header);
   font-weight: 700;
   font-size: 1.3rem;
-  color: #fff;
+  color: hsl(var(--primary));
 }
 
 .card-cta-btn {

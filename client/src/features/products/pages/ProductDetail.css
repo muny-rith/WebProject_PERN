@@ -71,7 +71,7 @@
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 16px;
-  color: #fff;
+  color: hsl(var(--text-main));
 }
 
 .detail-rating {
@@ -90,7 +90,7 @@
   font-family: var(--font-header);
   font-size: 2.2rem;
   font-weight: 800;
-  color: #fff;
+  color: hsl(var(--text-main));
   margin-bottom: 24px;
 }
 
@@ -104,7 +104,7 @@
 .detail-meta {
   margin-bottom: 32px;
   padding-bottom: 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border-light);
 }
 
 .meta-stock {
@@ -149,7 +149,7 @@
 
 /* Reviews Panel stylings */
 .product-reviews-section {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--border-light);
   padding-top: 64px;
 }
 
@@ -164,7 +164,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border-light);
   padding-bottom: 12px;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .review-author-meta strong {
-  color: #fff;
+  color: hsl(var(--text-main));
   font-size: 1rem;
 }
 

@@ -176,31 +176,31 @@
 
 /* Colorful backgrounds for category cards using nth-child */
 .category-text-card:nth-child(4n+1) {
-  background: linear-gradient(135deg, rgba(251, 133, 0, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(251, 133, 0, 0.3);
+  background: linear-gradient(135deg, rgba(251, 133, 0, 0.15) 0%, rgba(251, 133, 0, 0.02) 100%);
+  border: 1px solid rgba(251, 133, 0, 0.4);
 }
 
 .category-text-card:nth-child(4n+2) {
-  background: linear-gradient(135deg, rgba(33, 158, 188, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(33, 158, 188, 0.3);
+  background: linear-gradient(135deg, rgba(33, 158, 188, 0.15) 0%, rgba(33, 158, 188, 0.02) 100%);
+  border: 1px solid rgba(33, 158, 188, 0.4);
 }
 
 .category-text-card:nth-child(4n+3) {
-  background: linear-gradient(135deg, rgba(255, 183, 3, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(255, 183, 3, 0.3);
+  background: linear-gradient(135deg, rgba(255, 183, 3, 0.15) 0%, rgba(255, 183, 3, 0.02) 100%);
+  border: 1px solid rgba(255, 183, 3, 0.4);
 }
 
 .category-text-card:nth-child(4n+4) {
-  background: linear-gradient(135deg, rgba(142, 202, 230, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(142, 202, 230, 0.3);
+  background: linear-gradient(135deg, rgba(142, 202, 230, 0.15) 0%, rgba(142, 202, 230, 0.02) 100%);
+  border: 1px solid rgba(142, 202, 230, 0.4);
 }
 
 .category-text-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #fff;
+  color: hsl(var(--text-main));
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: none;
 }
 
 .category-text-card:hover {
@@ -258,6 +258,7 @@
 .value-card h3 {
   font-size: 1.25rem;
   font-weight: 600;
+  color: hsl(var(--text-main));
 }
 
 .value-card p {

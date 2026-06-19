@@ -82,7 +82,7 @@ const Home = () => {
             <h2 className="section-title">Shop by Curated Collections</h2>
           </div>
           <div className="grid-4 categories-text-grid">
-            {categories.map((cat, index) => (
+            {categories.slice(0, 4).map((cat, index) => (
               <Link
                 to={`/shop?category=${cat}`}
                 className="category-text-card glass-card"

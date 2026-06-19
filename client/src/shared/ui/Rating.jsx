@@ -24,11 +24,11 @@ const Rating = ({ rating = 0 }) => {
                 ? "hsl(var(--accent))"
                 : isHalf
                   ? "url(#half-gold)"
-                  : "rgba(255, 255, 255, 0.1)",
+                  : "hsla(var(--primary), 0.1)",
               stroke:
                 isFull || isHalf
                   ? "hsl(var(--accent))"
-                  : "rgba(255, 255, 255, 0.15)",
+                  : "hsla(var(--primary), 0.25)",
               strokeWidth: "1.5",
             }}
           >
@@ -42,7 +42,7 @@ const Rating = ({ rating = 0 }) => {
                   y2="0%"
                 >
                   <stop offset="50%" stopColor="hsl(var(--accent))" />
-                  <stop offset="50%" stopColor="rgba(255, 255, 255, 0.1)" />
+                  <stop offset="50%" stopColor="hsla(var(--primary), 0.1)" />
                 </linearGradient>
               </defs>
             )}
