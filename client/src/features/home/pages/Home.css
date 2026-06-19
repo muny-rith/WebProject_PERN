@@ -176,23 +176,23 @@
 
 /* Colorful backgrounds for category cards using nth-child */
 .category-text-card:nth-child(4n+1) {
-  background: linear-gradient(135deg, rgba(245, 166, 35, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(245, 166, 35, 0.3);
+  background: linear-gradient(135deg, rgba(251, 133, 0, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(251, 133, 0, 0.3);
 }
 
 .category-text-card:nth-child(4n+2) {
-  background: linear-gradient(135deg, rgba(74, 144, 226, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(74, 144, 226, 0.3);
+  background: linear-gradient(135deg, rgba(33, 158, 188, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(33, 158, 188, 0.3);
 }
 
 .category-text-card:nth-child(4n+3) {
-  background: linear-gradient(135deg, rgba(80, 227, 194, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(80, 227, 194, 0.3);
+  background: linear-gradient(135deg, rgba(255, 183, 3, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(255, 183, 3, 0.3);
 }
 
 .category-text-card:nth-child(4n+4) {
-  background: linear-gradient(135deg, rgba(208, 2, 27, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(208, 2, 27, 0.3);
+  background: linear-gradient(135deg, rgba(142, 202, 230, 0.15) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(142, 202, 230, 0.3);
 }
 
 .category-text-card h3 {
@@ -209,20 +209,20 @@
 }
 
 .category-text-card:nth-child(4n+1):hover {
-  border-color: rgba(245, 166, 35, 0.8);
-  box-shadow: 0 0 15px rgba(245, 166, 35, 0.3);
+  border-color: rgba(251, 133, 0, 0.8);
+  box-shadow: 0 0 15px rgba(251, 133, 0, 0.3);
 }
 .category-text-card:nth-child(4n+2):hover {
-  border-color: rgba(74, 144, 226, 0.8);
-  box-shadow: 0 0 15px rgba(74, 144, 226, 0.3);
+  border-color: rgba(33, 158, 188, 0.8);
+  box-shadow: 0 0 15px rgba(33, 158, 188, 0.3);
 }
 .category-text-card:nth-child(4n+3):hover {
-  border-color: rgba(80, 227, 194, 0.8);
-  box-shadow: 0 0 15px rgba(80, 227, 194, 0.3);
+  border-color: rgba(255, 183, 3, 0.8);
+  box-shadow: 0 0 15px rgba(255, 183, 3, 0.3);
 }
 .category-text-card:nth-child(4n+4):hover {
-  border-color: rgba(208, 2, 27, 0.8);
-  box-shadow: 0 0 15px rgba(208, 2, 27, 0.3);
+  border-color: rgba(142, 202, 230, 0.8);
+  box-shadow: 0 0 15px rgba(142, 202, 230, 0.3);
 }
 
 /* Value Cards section styles */
